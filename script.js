@@ -1,23 +1,17 @@
-const btns = document.querySelectorAll("button");
-const posArr = [0, 1000, 2000, 3000, 4000];
-
 /*
-btn1.addEventListener("click", () => {
-  new Anime(window, { scroll: 0 }, { duration: 500 });
-});
-btn2.addEventListener("click", () => {
-  new Anime(window, { scroll: 2000 }, { duration: 500 });
-});
-btn3.addEventListener("click", () => {
-  new Anime(window, { scroll: 4000 }, { duration: 500 });
-});
-*/
+  forEach
+  : 배열, 유사배열을 반복처리하기 위한 내장 함수
 
-//btns 버튼 유사배열을 반복처리 (반복도는 각 버튼, 반복도는 순번)
+  Array.forEach((data, idx)=>{
+    중괄호 안쪽의 코드블록은 배열의 갯수만큼 반복 처리됨
+    해당 코드블록 안쪽에서는 data, idx라는 파라미터로 전달되는 값 활용 가능
+    data: 현재 반복도는 배열의 데이터
+    idx: 현재 반복도는 순서값
+  })
+*/
+const btns = document.querySelectorAll("button");
+
 btns.forEach((btn, idx) => {
-  //내부적으로 파라미터로 전달되는 각 버튼 요소에 클릭 이벤트 연결
-  btn.addEventListener("click", () => {
-    //Anime의 scroll property값으로 posArr라는 위치모음 배열해서 현재반복도는 순번에 해당하는 위치값 연결
-    new Anime(window, { scroll: posArr[idx] }, { duration: 500 });
-  });
+  console.log(btn);
+  console.log(idx);
 });
