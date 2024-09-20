@@ -4,18 +4,25 @@
 	box-sizing: border-box;
   }
   
-  section {
-	width: 1000px;
-	height: 800px;
-	border: 1px solid black;
-	position: relative;
+  body {
+	height: 500vh;
+	background-image: linear-gradient(
+	  to bottom,
+	  red,
+	  hotpink,
+	  lightgreen,
+	  green,
+	  aqua,
+	  blue
+	);
   }
   
-  article {
-	width: 100px;
-	height: 100px;
-	background-color: aqua;
-	position: absolute;
-	top: 0px;
-	left: 0px;
+  nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+  }
+  nav button {
+	padding: 5px 10px;
+	cursor: pointer;
   }
